@@ -1,0 +1,11 @@
+<div class="container" ng-controller="MainController as login">
+	<h1>Login in</h1>
+	<form role="form" method="post">
+
+		Username: <input type="text" name="username" ng-model="login.loginData.username">	
+
+		Password: <input type="password" name="password" ng-model="login.loginData.password">
+
+		<button class="btn btn-primary" ng-click="login.doLogin()">Login</button>
+	</form>
+</div>
